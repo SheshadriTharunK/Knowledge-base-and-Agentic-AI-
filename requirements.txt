@@ -22,4 +22,3 @@ SQLAlchemy==2.0.48
 streamlit
 sqlalchemy
 langchain_ollama
-sqlite3
