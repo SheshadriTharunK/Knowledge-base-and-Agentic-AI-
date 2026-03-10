@@ -21,3 +21,5 @@ regex==2026.2.28
 SQLAlchemy==2.0.48
 streamlit
 sqlalchemy
+langchain_ollama
+sqlite3
