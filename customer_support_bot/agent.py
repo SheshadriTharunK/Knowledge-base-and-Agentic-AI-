@@ -1,7 +1,7 @@
 import json 
 
 from langchain.agents import create_agent
-from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 
 from system_prompt import system_prompt
@@ -16,16 +16,16 @@ from tools import (
 )
 
 
-llm = ChatOllama(
-    model="llama3.2",
-    temperature=0
-)
+llm = ChatGroq(
+        model="llama-3.3-70b-versatile", 
+        temperature=0
+    )
 
 
 def initialize_knowledge_agent():
 
-    llm = ChatOllama(
-        model="llama3.2",
+    llm = ChatGroq(
+        model="llama-3.3-70b-versatile",  
         temperature=0
     )
 
@@ -39,8 +39,8 @@ def initialize_knowledge_agent():
 
 def initialize_order_agent():
 
-    llm = ChatOllama(
-        model="llama3.2",
+    llm = ChatGroq(
+        model="llama-3.3-70b-versatile",  # or "mixtral-8x7b-32768"
         temperature=0
     )
 
